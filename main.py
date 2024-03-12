@@ -16,7 +16,3 @@ def free_tax():
     return amount
 
 
-if __name__ == '__main__':
-    main()
-
-
