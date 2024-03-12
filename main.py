@@ -17,23 +17,21 @@ def main():
         """
             The function determines the amount of annual income.
         """
-        global amount1
-        amount1 = 0
+        amount = 0
         for month in range(1, MAX_MONTH + 1):
             value = float(input(f'{ru.INCOME} {ru.NAME[month]} [USD]: '))
-            amount1 += value
-        return amount1
+            amount += value
+        return amount
 
     def free_tax():
         """
         The function determines the annual tax-free amount.
         """
-        global amount2
-        amount2 = 0
+        amount = 0
         for month in range(1, MAX_MONTH + 1):
             value = float(input(f'{ru.TEXT_FREE_TAX} {ru.NAME[month]} [USD]: '))
-            amount2 += value
-        return amount2
+            amount += value
+        return amount
 
     revenue_tax = (amount1 - amount2)
 
