@@ -4,6 +4,8 @@
 import ru_local as ru
 MAX_MONTH = 12
 
+grade = int(input(f'{ru.CATEGORY}\n1.{ru.ALONE}\n2.{ru.FAMILY}\n3.{ru.SINGLE}\n{ru.GRADE}'))
+
 
 def free_tax():
     '''
