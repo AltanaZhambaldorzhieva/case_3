@@ -30,3 +30,5 @@ def free_tax():
 grade = int(input(f'{ru.CATEGORY}\n1.{ru.ALONE}\n2.{ru.FAMILY}\n3.{ru.SINGLE}\n{ru.GRADE}'))
 print(ru.ANNUAL_INCOME)
 print(f'{ru.ANNUAL_INCOME_SUM} ${annual_income()}')
+print(ru.FREE_TAX)
+print(f'{ru.FINAL_FREE_TAX} ${free_tax()}')
