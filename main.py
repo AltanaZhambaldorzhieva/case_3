@@ -28,3 +28,4 @@ def free_tax():
         amount += value
     return amount
 
+annual_income()
