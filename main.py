@@ -66,6 +66,9 @@ def main():
             return tax
 
     def couple(revenue_tax):
+        """
+            The function determines tax of couple.
+        """
         if revenue_tax < 18151:
             tax = 0.1 * revenue_tax
             return tax
@@ -91,6 +94,9 @@ def main():
             return tax
 
     def parent(revenue_tax):
+        """
+            The function determines tax of parent.
+        """
         if revenue_tax < 12951:
             tax = 0.1 * revenue_tax
             return tax
