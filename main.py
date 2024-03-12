@@ -4,9 +4,6 @@
 import ru_local as ru
 MAX_MONTH = 12
 
-grade = int(input(f'{ru.CATEGORY}\n1.{ru.ALONE}\n2.{ru.FAMILY}\n3.{ru.SINGLE}\n{ru.GRADE}'))
-print(ru.ANNUAL_INCOME)
-
 
 def annual_income():
     """
@@ -30,4 +27,6 @@ def free_tax():
     return amount
 
 
+grade = int(input(f'{ru.CATEGORY}\n1.{ru.ALONE}\n2.{ru.FAMILY}\n3.{ru.SINGLE}\n{ru.GRADE}'))
+print(ru.ANNUAL_INCOME)
 print(f'{ru.ANNUAL_INCOME_SUM} ${annual_income()}')
