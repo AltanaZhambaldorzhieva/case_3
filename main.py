@@ -36,7 +36,11 @@ def main():
         return amount2
 
     revenue_tax = (amount1 - amount2)
+
     def subject(revenue_tax):
+        """
+            The function determines tax of subject.
+        """
         if revenue_tax < 9076:
             tax = 0.1 * revenue_tax
             return tax
