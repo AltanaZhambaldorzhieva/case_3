@@ -80,10 +80,10 @@ def couple(revenue_tax):
         tax = (0.1 * 18150 + 0.15 * 55650 + 0.25 * 75050 + 0.28 * 78000 + 0.33 * 178250 + 0.35 * 52500 + 0.396 * (revenue_tax - 457600))
         return tax
 
-    def parent(revenue_tax):
-        """
-            The function determines tax of parent.
-        """
+def parent(revenue_tax):
+    """
+        The function determines tax of parent.
+    """
         if revenue_tax < 12951:
             tax = 0.1 * revenue_tax
             return tax
