@@ -36,24 +36,24 @@ def subject(revenue_tax):
         tax = 0.1 * revenue_tax
         return tax
     elif revenue_tax < 36901:
-        tax = 0.1 * 9075 + 0.15 * (revenue_tax - 9075)
+        tax = 0.1 * 9075 + 0.15 * (revenue_tax - 9076)
         return tax
     elif revenue_tax < 89351:
-        tax = 0.1 * 9075 + 0.15 * 27825 + 0.25 * (revenue_tax - 36900)
+        tax = 0.1 * 9075 + 0.15 * 27825 + 0.25 * (revenue_tax - 36901)
         return tax
     elif revenue_tax < 186351:
-        tax = 0.1 * 9075 + 0.15 * 27825 + 0.25 * 52450 + 0.28 * (revenue_tax - 89350)
+        tax = 0.1 * 9075 + 0.15 * 27825 + 0.25 * 52450 + 0.28 * (revenue_tax - 89351)
         return tax
     elif revenue_tax < 405101:
-        tax = 0.1 * 9075 + 0.15 * 27825 + 0.25 * 52450 + 0.28 * 97000 + 0.33 * (revenue_tax - 186350)
+        tax = 0.1 * 9075 + 0.15 * 27825 + 0.25 * 52450 + 0.28 * 97000 + 0.33 * (revenue_tax - 186351)
         return tax
-    elif revenue_tax < 406_751:
+    elif revenue_tax < 406751:
         tax = 0.1 * 9075 + 0.15 * 27825 + 0.25 * 52450 + 0.28 * 97_000 + 0.33 * 218750 + 0.35 * (
-                    revenue_tax - 405100)
+                    revenue_tax - 405101)
         return tax
     else:
         tax = 0.1 * 9075 + 0.15 * 27825 + 0.25 * 52450 + 0.28 * 97000 + 0.33 * 218750 + 0.35 * 1650 + 0.396 * (
-                revenue_tax - 406750)
+                revenue_tax - 406751)
         return tax
 
 
@@ -65,23 +65,23 @@ def couple(revenue_tax):
         tax = 0.1 * revenue_tax
         return tax
     elif revenue_tax < 73801:
-        tax = 0.1 * 18150 + 0.15 * (revenue_tax - 18150)
+        tax = 0.1 * 18150 + 0.15 * (revenue_tax - 18151)
         return tax
     elif revenue_tax < 148851:
-        tax = 0.1 * 18150 + 0.15 * 55650 + 0.25 * (revenue_tax - 73800)
+        tax = 0.1 * 18150 + 0.15 * 55650 + 0.25 * (revenue_tax - 73801)
         return tax
     elif revenue_tax < 226851:
-        tax = 0.1 * 18150 + 0.15 * 55650 + 0.25 * 75050 + 0.28 * (revenue_tax - 148850)
+        tax = 0.1 * 18150 + 0.15 * 55650 + 0.25 * 75050 + 0.28 * (revenue_tax - 148851)
         return tax
     elif revenue_tax < 405101:
-        tax = 0.1 * 18150 + 0.15 * 55650 + 0.25 * 75050 + 0.28 * 78000 + 0.33 * (revenue_tax - 226850)
+        tax = 0.1 * 18150 + 0.15 * 55650 + 0.25 * 75050 + 0.28 * 78000 + 0.33 * (revenue_tax - 226851)
         return tax
     elif revenue_tax < 457601:
-        tax = 0.1 * 18_150 + 0.15 * 55650 + 0.25 * 75050 + 0.28 * 78000 + 0.33 * 178250 + 0.35 * (revenue_tax - 405100)
+        tax = 0.1 * 18_150 + 0.15 * 55650 + 0.25 * 75050 + 0.28 * 78000 + 0.33 * 178250 + 0.35 * (revenue_tax - 405101)
         return tax
     else:
         tax = (0.1 * 18150 + 0.15 * 55650 + 0.25 * 75050 + 0.28 * 78000 + 0.33 * 178250 + 0.35 * 52500 + 0.396 * (
-                revenue_tax - 457600))
+                revenue_tax - 457601))
         return tax
 
 
@@ -93,24 +93,24 @@ def parent(revenue_tax):
         tax = 0.1 * revenue_tax
         return tax
     elif revenue_tax < 49401:
-        tax = 0.1 * 12950 + 0.15 * (revenue_tax - 12950)
+        tax = 0.1 * 12950 + 0.15 * (revenue_tax - 12951)
         return tax
     elif revenue_tax < 127551:
-        tax = 0.1 * 12950 + 0.15 * 36450 + 0.25 * (revenue_tax - 49400)
+        tax = 0.1 * 12950 + 0.15 * 36450 + 0.25 * (revenue_tax - 49401)
         return tax
     elif revenue_tax < 206601:
-        tax = 0.1 * 12950 + 0.15 * 36450 + 0.25 * 78150 + 0.28 * (revenue_tax - 127550)
+        tax = 0.1 * 12950 + 0.15 * 36450 + 0.25 * 78150 + 0.28 * (revenue_tax - 127551)
         return tax
     elif revenue_tax < 405101:
-        tax = 0.1 * 12950 + 0.15 * 36450 + 0.25 * 78150 + 0.28 * 79050 + 0.33 * (revenue_tax - 206600)
+        tax = 0.1 * 12950 + 0.15 * 36450 + 0.25 * 78150 + 0.28 * 79050 + 0.33 * (revenue_tax - 206601)
         return tax
     elif revenue_tax < 432201:
         tax = 0.1 * 12950 + 0.15 * 36450 + 0.25 * 78150 + 0.28 * 79050 + 0.33 * 198500 + 0.35 * (
-                revenue_tax - 405100)
+                revenue_tax - 405101)
         return tax
     else:
         tax = (0.1 * 12950 + 0.15 * 36450 + 0.25 * 78150 + 0.28 * 79050 + 0.33 * 198500 + 0.35 * 27100 + 0.396 * (
-                revenue_tax - 432200))
+                revenue_tax - 432201))
         return tax
 
 
