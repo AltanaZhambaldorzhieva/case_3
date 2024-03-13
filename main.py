@@ -123,6 +123,7 @@ def main():
     revenue_no_tax = free_tax()
     revenue_tax = revenue - revenue_no_tax
     print(f'{ru.FINAL_FREE_TAX} ${revenue_no_tax}\n{ru.TAXABLE} ${revenue_tax}')
+    print(f'{ru.TAX} ${}')
 
 
 if __name__ == '__main__':
