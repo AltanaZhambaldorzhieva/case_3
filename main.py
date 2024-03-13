@@ -8,7 +8,7 @@ MAX_MONTH = 12
 
 def annual_income():
     """
-        The function determines the amount of annual income.
+    The function determines the amount of annual income.
     """
     amount = 0
     for month in range(1, MAX_MONTH + 1):
@@ -30,7 +30,7 @@ def free_tax():
 
 def subject(revenue_tax):
     """
-        The function determines tax of subject.
+    The function determines tax of subject.
     """
     if revenue_tax < 9076:
         tax = 0.1 * revenue_tax
@@ -59,7 +59,7 @@ def subject(revenue_tax):
 
 def couple(revenue_tax):
     """
-        The function determines tax of couple.
+    The function determines tax of couple.
     """
     if revenue_tax < 18151:
         tax = 0.1 * revenue_tax
@@ -87,7 +87,7 @@ def couple(revenue_tax):
 
 def parent(revenue_tax):
     """
-        The function determines tax of parent.
+    The function determines tax of parent.
     """
     if revenue_tax < 12951:
         tax = 0.1 * revenue_tax
@@ -116,8 +116,8 @@ def parent(revenue_tax):
 
 def main():
     """
-        Main function.
-        :return: None
+    Main function.
+    :return: None
     """
 
     grade = int(input(f'{ru.CATEGORY}\n1.{ru.ALONE}\n2.{ru.FAMILY}\n3.{ru.SINGLE}\n{ru.GRADE}'))
