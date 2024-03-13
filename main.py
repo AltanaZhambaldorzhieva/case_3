@@ -124,11 +124,17 @@ def main():
     revenue_tax = revenue - revenue_no_tax
     print(f'{ru.FINAL_FREE_TAX} ${revenue_no_tax}\n{ru.TAXABLE} ${revenue_tax}')
     if grade == 1:
-        print(f'{ru.TAX} ${subject()}')
-    elif:
-        print(f'{ru.TAX} ${couple()}')
+        tax = subject()
+        print(f'{ru.TAX} ${tax}')
+        print(f'{ru.MOUNTHLY_TAX} ${tax / 12}')
+    elif grade == 2:
+        tax = couple()
+        print(f'{ru.TAX} ${tax}')
+        print(f'{ru.MOUNTHLY_TAX} ${tax / 12}')
     else:
-        print(f'{ru.TAX} ${parent()}')
+        tax = parent()
+        print(f'{ru.TAX} ${tax}')
+        print(f'{ru.MOUNTHLY_TAX} ${tax / 12}')
 
 
 if __name__ == '__main__':
